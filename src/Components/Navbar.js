@@ -8,30 +8,19 @@ export const Navbar= () =>{
 
     return (
 
-        <div id="nav-bar">
-        <li  className = "active-link">
+        <div className="navbar">
+            
+        <ul  className = "nav-links">
           <Link to="/">Home</Link>
-        </li>
-        <li className="inactive-link">
-          <Link to="/about">About</Link>
-        </li>
-        {/* <li className="inactive-link">
-          <Link to="/about">About</Link>
-        </li>
-        <li  className="inactive-link">
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li  className="inactive-link">
-          <Link to="/rules-and-policies">Rules and Policies</Link>
-        </li>
-        <li  className="inactive-link">
-          <Link to="/game-information">Game Information </Link>
-        </li>
-    
-        <li  className="inactive-link">
-          <Link to="/registration-form">Registration Form </Link>
-        </li>
-     */}
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+       <Link to="/rules-and-policies">Rules and Policies</Link>
+       <Link to="/game-information">Game Information</Link>
+       <Link to="/registracion-form">Registration Form</Link>
+       <Link to="/sign-in">Sign In</Link>
+       <Link to="/chat">Chat</Link>
+        </ul>
+     
     </div>
      
      );
