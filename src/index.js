@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './Styles/nysl.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import { Home } from './Components/Home';
 import reportWebVitals from './reportWebVitals';
@@ -12,6 +13,7 @@ import{GameInfo} from './Components/Game_info';
 import{Registration} from './Components/Rejistration';
 import { SignIn } from './Components/SignIn';
 import {Chat} from './Components/Chat';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
