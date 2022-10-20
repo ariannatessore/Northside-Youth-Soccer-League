@@ -1,4 +1,4 @@
-export const september = [
+export const septembers = [
     {
         "id": "1",
         "date": "01_09_2021",
@@ -73,4 +73,4 @@ export const september = [
     }
 ]
 
-export default september;
+export default septembers;

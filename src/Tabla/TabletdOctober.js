@@ -1,22 +1,48 @@
 import React from 'react'
 import {MapUrl } from '../Components/mapa/MapUrl';
-import October from '../utilities/october';
+
+import { useNavigate } from 'react-router-dom';
+import { useData }  from '../utilities/firebase';
+
+   
+
+
+
 
 export  const TdDataOctober =() =>{
-    const row = Object.values(October);
-    console.log(row);
-    return row.map((data) => {
+    const [game , loading, error] = useData(); 
+    
+    
+    const navigate = useNavigate()
+    
+   
+
+ 
+   const handleClickGame = (url) => {
+    navigate(url)
+   }
+   if (error) return <h1>{error}</h1>;
+  if (loading) return <h1>Loading the schedule...</h1>
+    return game.map((data) => {
+        const url = `/octobers/${data.id}`
+
        return (
-        <tbody>
-         <tr>
-           
-           <td >{data.date}</td>
+       
+        <tbody key={data.id}> 
+         <tr onClick={() => handleClickGame(url)} style={{ cursor: 'pointer' }}>
+            <td>{data.id}</td>
+           <td >{data.date} </td>
            <td>{data.teams}</td>
            <td>{data.location}</td>
            <td>{data.time}</td>
-           <td><MapUrl url = {data.url}/></td>
+           <td><MapUrl url = {data.url}/></td> 
          </tr>
         </tbody>
+        
        )
        })
+            
+        
+    
+   
     }

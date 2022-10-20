@@ -1,12 +1,12 @@
-const October = [
-    {
+export const octobers = [
+    { 
         "id": "10",
         "date": "06_10_2021",
         "time": "9:30 a.m.",
         "teams": "U2 and U5",
         "location": "Majorie",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5936.571390936897!2d-87.6478374194755!3d41.92971193428922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614!5e0!3m2!1sen!2sus!4v1498666301447"
-    },
+},
     {
         "id": "11",
         "date": "06_10_2021",
@@ -66,4 +66,5 @@ const October = [
     }
 ]
 
-export default October;
+
+ 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Banner} from './Banner';
 import '../Styles/nysl.css';
-import { Navbar } from './Navbar';
+import { Navbarr } from './Navbar';
 
 export const Chat= () =>{
 
@@ -9,8 +9,9 @@ export const Chat= () =>{
         
         <div className="Chat">
         <Banner/>
-       <Navbar />
+       <Navbarr />
        <div id="title-bar"><h2>Chat</h2></div>
        <img id="logo" src={require('../imagenes/nysl_logo.png')} alt="Northside Youth Soccer League Logo" />
        </div>
-    )}
+    )
+}

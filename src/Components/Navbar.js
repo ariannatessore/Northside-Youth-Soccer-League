@@ -1,32 +1,46 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Navbar,Nav} from 'react-bootstrap';
+import {LinkContainer} from 'react-router-bootstrap';
 import '../Styles/nysl.css';
 
 
-
-export const Navbar= () =>{
-
+export const Navbarr = () => {
     return (
 
-        <div className="navbar">
-            
-        <ul  className = "nav-links">
-          <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-       <Link to="/rules-and-policies">Rules and Policies</Link>
-       <Link to="/game-information">Game Information</Link>
-       <Link to="/registracion-form">Registration Form</Link>
-       <Link to="/sign-in">Sign In</Link>
-       <Link to="/chat">Chat</Link>
-        </ul>
-     
-    </div>
-     
-     );
+        <header className="header">
+        <Navbar bg="light" expand="lg">
+            <LinkContainer to="/">
+  <Navbar.Brand>Home</Navbar.Brand>
+  </LinkContainer>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="mr-auto">
+        <LinkContainer to="/about">
+      <Nav.Link>About</Nav.Link>
+      </LinkContainer>
+      <LinkContainer to="/contact">
+      <Nav.Link>Contact</Nav.Link>
+      </LinkContainer>
+      <LinkContainer to="/rules-and-policies">
+      <Nav.Link>Rules and Policies</Nav.Link>
+      </LinkContainer>
+      <LinkContainer to="/game-information">
+      <Nav.Link>Game Information</Nav.Link>
+      </LinkContainer>
+      <LinkContainer to="/registracion-form">
+      <Nav.Link>Registration Form</Nav.Link>
+      </LinkContainer>
+      <LinkContainer to="/sign-in">
+      <Nav.Link>Sign In</Nav.Link>
+      </LinkContainer>
+      <LinkContainer to="/chat">
+      <Nav.Link>Chat</Nav.Link>
+      </LinkContainer>
 
-    }
-
-
-
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
+</header>
+    )
+}
  

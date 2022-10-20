@@ -15,11 +15,14 @@ export default function Tables() {
 <Table  id="tabla" stripped bordered hover variant="dark" size="sm">
   <thead>
     <tr>
+    <th width="2000" > ID</th>
       <th width="2000" > September</th>
       <th width="2000" >Teams</th>
       <th width="2000" >Location</th>
       <th width="2000" >Times</th>
-      <th width="2000">Map</th>
+      
+      
+    
  
     </tr>
     
@@ -35,16 +38,18 @@ export default function Tables() {
 <Table stripped bordered hover variant="dark" size="sm">
   <thead>
     <tr>
+    <th width="2000" >ID</th>
       <th width="2000" >October</th>
       <th width="2000" >Teams</th>
       <th width="2000" >Location</th>
       <th width="2000" >Times</th>
-      <th width="2000">Map</th>
+    
+     
  
     </tr>
   </thead>
 
-  <TdDataOctober></TdDataOctober>
+<TdDataOctober></TdDataOctober>
   </Table>
  
  
@@ -53,5 +58,7 @@ export default function Tables() {
     
   );
 }
+
+
 
 

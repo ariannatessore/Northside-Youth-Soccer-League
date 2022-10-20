@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, onValue,ref } from 'firebase/database';
 import   {useState,useEffect,} from 'react';
 
-const firebaseConfig = {
+export const firebaseConfig = {
     apiKey: "AIzaSyCZDEBr02rCWgQ6Z9W7cKIyobG3pE9VIOc",
     authDomain: "nysl-45a01.firebaseapp.com",
     databaseURL: "https://nysl-45a01-default-rtdb.firebaseio.com",
@@ -24,7 +24,33 @@ export const useData = (path, transform) => {
     const [error, setError] = useState();
   
     useEffect(() => {
-      const dbRef = ref(database, '/game');
+      const dbRef = ref(database, '/game/october');
+      const devMode = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+      if (devMode) { console.log(`loading ${path}`); }
+      return onValue(dbRef, (snapshot) => {
+        const val = snapshot.val();
+        if (devMode) { console.log(val); }
+        setData(transform ? transform(val) : val);
+        setLoading(false);
+        setError(null);
+      }, (error) => {
+        setData(null);
+        setLoading(false);
+        setError(error);
+      });
+    }, [path, transform]);
+  
+    return [data, loading, error];
+  };
+
+
+  export const useDataSeptember = (path, transform) => {
+    const [data, setData] = useState();
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState();
+  
+    useEffect(() => {
+      const dbRef = ref(database,`/game/september`);
       const devMode = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
       if (devMode) { console.log(`loading ${path}`); }
       return onValue(dbRef, (snapshot) => {

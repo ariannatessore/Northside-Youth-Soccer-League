@@ -1,7 +1,7 @@
 import React from 'react';
 import {Banner} from './Banner';
 import '../Styles/nysl.css';
-import { Navbar } from './Navbar';
+import { Navbarr } from './Navbar';
 
 export const SignIn = () =>{
 
@@ -9,7 +9,7 @@ export const SignIn = () =>{
         
         <div className="SignIn">
         <Banner/>
-       <Navbar />
+       <Navbarr />
        <div id="title-bar"><h2>Sign In</h2></div>
        <img id="logo" src={require('../imagenes/nysl_logo.png')} alt="Northside Youth Soccer League Logo" />
        </div>

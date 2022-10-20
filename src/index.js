@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './Styles/nysl.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import { Home } from './Components/Home';
 import reportWebVitals from './reportWebVitals';
@@ -13,6 +14,10 @@ import{GameInfo} from './Components/Game_info';
 import{Registration} from './Components/Rejistration';
 import { SignIn } from './Components/SignIn';
 import {Chat} from './Components/Chat';
+import {OctoberMonth} from './Components/Game';
+import { SeptemberMonth } from './Tabla/SeptemberMonth';
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -29,7 +34,14 @@ root.render(
       <Route   path='/registracion-form' element={<Registration/>} />
       <Route   path='/sign-in' element={<SignIn/>} />
       <Route   path='/chat' element={<Chat/>} />
-
+      <Route   path='/octobers' element={<OctoberMonth/>} />
+      <Route   path="/octobers/:octoberId"  element={<OctoberMonth/>} />
+      <Route   path="/septembers/:septemberId"  element={<SeptemberMonth/>} />
+      
+      
+      
+      
+      
      
       </Routes>
     </BrowserRouter>
