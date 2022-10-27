@@ -1,6 +1,31 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase, onValue,ref } from 'firebase/database';
 import   {useState,useEffect,} from 'react';
+import { getAuth, GoogleAuthProvider, onIdTokenChanged, signInWithPopup, signOut } from 'firebase/auth';
+import { getStorage } from "firebase/storage";
+import { getFirestore } from "firebase/firestore";
+
+
+export const signInWithGoogle = () => {
+  signInWithPopup(getAuth(firebase), new GoogleAuthProvider());
+};
+
+const firebaseSignOut = () => signOut(getAuth(firebase));
+
+export { firebaseSignOut as signOut };
+
+export const useUserState = () => {
+  const [user, setUser] = useState();
+
+  useEffect(() => {
+    onIdTokenChanged(getAuth(firebase), setUser);
+  }, []);
+
+  return [user];
+};
+
+
+
 
 export const firebaseConfig = {
     apiKey: "AIzaSyCZDEBr02rCWgQ6Z9W7cKIyobG3pE9VIOc",
@@ -69,4 +94,8 @@ export const useData = (path, transform) => {
     return [data, loading, error];
   };
 
+
+  export const auth = getAuth();
+export const storage = getStorage();
+export const db = getFirestore()
   

@@ -13,15 +13,20 @@ import{Rules} from './Components/Rules';
 import{GameInfo} from './Components/Game_info';
 import{Registration} from './Components/Rejistration';
 import { SignIn } from './Components/SignIn';
-import {Chat} from './Components/Chat';
 import {OctoberMonth} from './Components/Game';
 import { SeptemberMonth } from './Tabla/SeptemberMonth';
-
+import {Register} from './Components/Chat/Register';
+import {Login} from './Components/Chat/Login';
+import { AuthContextProvider } from './Components/Chat/AuthContext';
+import { ChatContextProvider } from './Components/Chat/ChatContext';
+import { Chat } from './Components/Chat';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <AuthContextProvider>
+    <ChatContextProvider>
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
@@ -33,11 +38,12 @@ root.render(
       <Route   path='/game-information' element={<GameInfo/>} />
       <Route   path='/registracion-form' element={<Registration/>} />
       <Route   path='/sign-in' element={<SignIn/>} />
-      <Route   path='/chat' element={<Chat/>} />
       <Route   path='/octobers' element={<OctoberMonth/>} />
       <Route   path="/octobers/:octoberId"  element={<OctoberMonth/>} />
       <Route   path="/septembers/:septemberId"  element={<SeptemberMonth/>} />
-      
+      <Route path="login" element={<Login />} />
+      <Route path="register" element={<Register />} />
+      <Route path="chat" element={<Chat />} />
       
       
       
@@ -48,6 +54,9 @@ root.render(
     
     
   </React.StrictMode>
+
+</ChatContextProvider>
+</AuthContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

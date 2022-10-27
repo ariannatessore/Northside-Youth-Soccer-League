@@ -8,7 +8,7 @@ export  const TdDataSeptember =() =>{
   const navigate = useNavigate()
   const [game , loading, error] = useDataSeptember(); 
    
- 
+ console.log(useDataSeptember);
 
     const handleClickGame = (url) => {
       navigate(url)

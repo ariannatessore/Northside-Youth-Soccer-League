@@ -10,6 +10,9 @@ import './Styles/nysl.css';
 
 
 function App() {
+
+
+  
   const [game , loading, error] = useData(); 
   console.log(game,'game222')
 
@@ -27,14 +30,10 @@ function App() {
       
       
       
-    
-
-  
-       
       
-    
-    
-       </div>
+</div>
+
+
   );
 }
 

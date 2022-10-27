@@ -36,6 +36,7 @@ export const Navbarr = () => {
       <LinkContainer to="/chat">
       <Nav.Link>Chat</Nav.Link>
       </LinkContainer>
+     
 
     </Nav>
   </Navbar.Collapse>
