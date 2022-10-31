@@ -88,12 +88,44 @@
   
 
   #saturday-warning{
+    position: relative;
+    bottom: -68px;
+    left: -86px;
+    margin: 100px;
+  }
+
     
-    
-    margin:15px 0px;
+  
+  
+  .navbar1{
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 16px;
   }
   
-  
- 
 
- 
+ .table-dark { height: 507px;
+
+ }
+
+ .fall-schedule{
+  position: relative;
+  bottom: -145px ;
+  margin: 13px;
+ }
+
+
+
+
+ .game-date{
+  font-size: 70px;
+ }
+ .game-time{
+  font-size: 70px;
+ }
+ .game-location{
+  font-size: 70px;
+ }
+ .more-info{
+  margin:33px;
+ }

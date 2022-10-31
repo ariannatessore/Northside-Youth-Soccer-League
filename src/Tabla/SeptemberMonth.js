@@ -18,7 +18,7 @@ export const SeptemberMonth = () => {
    return(
     <div className='information-one-game'>
     <div className='game-team'> {game.teams}</div>
-    <div className='game-date'> september {game.date}</div>
+    <div className='game-date'> September {game.date}  </div>
     <div className='game-time'> {game.time}</div>
     <div className='game-location'>{game.location}</div>
     <div className='map-url'> <MapUrl url = {game.url}/> </div>

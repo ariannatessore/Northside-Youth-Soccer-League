@@ -6,7 +6,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
 import Add from '../Chat/img/add.png';
-import '../Chat/Chat.scss';
+import '../../Styles/Chat.scss';
 
 
 export const Register = () => {

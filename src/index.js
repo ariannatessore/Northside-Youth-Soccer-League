@@ -11,7 +11,6 @@ import {About} from './Components/About';
 import {Contact} from './Components/Contact';
 import{Rules} from './Components/Rules';
 import{GameInfo} from './Components/Game_info';
-import{Registration} from './Components/Rejistration';
 import { SignIn } from './Components/SignIn';
 import {OctoberMonth} from './Components/Game';
 import { SeptemberMonth } from './Tabla/SeptemberMonth';
@@ -36,7 +35,6 @@ root.render(
       <Route   path='/contact' element={<Contact/>} />
       <Route   path='/rules-and-policies' element={<Rules/>} />
       <Route   path='/game-information' element={<GameInfo/>} />
-      <Route   path='/registracion-form' element={<Registration/>} />
       <Route   path='/sign-in' element={<SignIn/>} />
       <Route   path='/octobers' element={<OctoberMonth/>} />
       <Route   path="/octobers/:octoberId"  element={<OctoberMonth/>} />

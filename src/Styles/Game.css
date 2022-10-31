@@ -1,12 +1,16 @@
 .game-team{
-    font-size: 60px;
+    font-size: 80px;
 }
 
 .information-one-game{
 
-    color:white;
-    background-color: black;
+    color: black;
+    background-image:url("../imagenes/design1_image1.jpg");
    height: 1000px;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
    
    
 }

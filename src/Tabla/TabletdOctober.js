@@ -1,5 +1,5 @@
 import React from 'react'
-import {MapUrl } from '../Components/mapa/MapUrl';
+
 
 import { useNavigate } from 'react-router-dom';
 import { useData }  from '../utilities/firebase';
@@ -35,7 +35,7 @@ export  const TdDataOctober =() =>{
            <td>{data.teams}</td>
            <td>{data.location}</td>
            <td>{data.time}</td>
-           <td><MapUrl url = {data.url}/></td> 
+           
          </tr>
         </tbody>
         

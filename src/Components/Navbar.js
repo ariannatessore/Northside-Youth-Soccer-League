@@ -6,7 +6,7 @@ import '../Styles/nysl.css';
 
 export const Navbarr = () => {
     return (
-
+      <div className='navbar1'>
         <header className="header">
         <Navbar bg="light" expand="lg">
             <LinkContainer to="/">
@@ -27,9 +27,6 @@ export const Navbarr = () => {
       <LinkContainer to="/game-information">
       <Nav.Link>Game Information</Nav.Link>
       </LinkContainer>
-      <LinkContainer to="/registracion-form">
-      <Nav.Link>Registration Form</Nav.Link>
-      </LinkContainer>
       <LinkContainer to="/sign-in">
       <Nav.Link>Sign In</Nav.Link>
       </LinkContainer>
@@ -42,6 +39,7 @@ export const Navbarr = () => {
   </Navbar.Collapse>
 </Navbar>
 </header>
+</div>
     )
 }
  
