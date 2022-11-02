@@ -12,7 +12,7 @@ import {Contact} from './Components/Contact';
 import{Rules} from './Components/Rules';
 import{GameInfo} from './Components/Game_info';
 import { SignIn } from './Components/SignIn';
-import {OctoberMonth} from './Components/Game';
+import {OctoberMonth} from './Tabla/OctoberMonth';
 import { SeptemberMonth } from './Tabla/SeptemberMonth';
 import {Register} from './Components/Chat/Register';
 import {Login} from './Components/Chat/Login';
