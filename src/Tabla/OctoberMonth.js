@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
 import {octobers} from '../utilities/october';
-import { MapUrl } from '../Components/mapa/MapUrl';
-import '../Styles/Game.css';
+import { MapUrl } from '../components/mapa/MapUrl';
+import '../styles/Game.css';
 
 
 

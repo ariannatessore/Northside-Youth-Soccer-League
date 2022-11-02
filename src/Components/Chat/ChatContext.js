@@ -3,7 +3,7 @@ import {
     useContext,
     useReducer,
   } from "react";
-  import { AuthContext } from '../Chat/AuthContext';
+  import { AuthContext } from './AuthContext';
   
   export const ChatContext = createContext();
   

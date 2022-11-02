@@ -1,8 +1,8 @@
 import React from 'react';
 import {Banner} from './Banner';
-import '../Styles/nysl.css';
+import '../styles/nysl.css';
 import { Navbarr } from './Navbar';
-import{Login} from './Chat/Login'
+import{Login} from './chat/Login'
 
 
 

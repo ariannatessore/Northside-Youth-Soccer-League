@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import {collection,query,where,getDocs,setDoc,doc,updateDoc,serverTimestamp,getDoc,} from "firebase/firestore";
 import { db } from '../../utilities/firebase';
-import { AuthContext } from '../Chat/AuthContext';
+import { AuthContext } from './AuthContext';
 export const Search = () => {
   const [username, setUsername] = useState("");
   const [user, setUser] = useState(null);

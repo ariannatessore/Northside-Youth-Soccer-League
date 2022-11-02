@@ -1,9 +1,9 @@
 import React from'react';
-import {Banner} from './Components/Banner';
-import {Navbarr} from './Components/Navbar';
+import {Banner} from './components/Banner';
+import {Navbarr} from './components/Navbar';
 import { useData } from './utilities/firebase';
-import {Home} from './Components/Home';
-import './Styles/nysl.css';
+import {Home} from './components/Home';
+import './styles/nysl.css';
 
 
 

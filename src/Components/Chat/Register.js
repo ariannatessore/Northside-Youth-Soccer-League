@@ -5,8 +5,8 @@ import { auth,db, storage } from  '../../utilities/firebase';
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
-import Add from '../Chat/img/add.png';
-import '../../Styles/Chat.scss';
+import Add from './img/add.png';
+import '../../styles/Chat.scss';
 
 
 export const Register = () => {

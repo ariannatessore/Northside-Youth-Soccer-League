@@ -1,7 +1,7 @@
 import React from 'react'
 import septembers from '../utilities/septembers';
 import { useParams } from "react-router-dom";
-import { MapUrl } from '../Components/mapa/MapUrl';
+import { MapUrl } from '../components/mapa/MapUrl';
 
 export const SeptemberMonth = () => {
     let params = useParams();

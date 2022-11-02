@@ -1,7 +1,7 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
 import {TdDataSeptember} from './TabletdSeptember';
-import{TdDataOctober} from '../Tabla/TabletdOctober';
+import{TdDataOctober} from './TabletdOctober';
 
 
       

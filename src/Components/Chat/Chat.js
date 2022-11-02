@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import {Messages} from "../Chat/Messages";
-import {Input} from '../Chat/Input';
-import { ChatContext } from "../Chat/ChatContext";
-import Add from '../Chat/img/add.png';
-import Cam from '../Chat/img/cam.png';
-import More from '../Chat/img/more.png';
+import {Messages} from "./Messages";
+import {Input} from './Input';
+import { ChatContext } from "./ChatContext";
+import Add from './img/add.png';
+import Cam from './img/cam.png';
+import More from './img/more.png';
 
 export const Chat = () => {
   const { data } = useContext(ChatContext);

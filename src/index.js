@@ -1,24 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './Styles/nysl.css';
+import './styles/nysl.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
-import { Home } from './Components/Home';
+import { Home } from './components/Home';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,Routes,Route } from "react-router-dom";
-import {About} from './Components/About';
-import {Contact} from './Components/Contact';
-import{Rules} from './Components/Rules';
-import{GameInfo} from './Components/Game_info';
-import { SignIn } from './Components/SignIn';
-import {OctoberMonth} from './Tabla/OctoberMonth';
-import { SeptemberMonth } from './Tabla/SeptemberMonth';
-import {Register} from './Components/Chat/Register';
-import {Login} from './Components/Chat/Login';
-import { AuthContextProvider } from './Components/Chat/AuthContext';
-import { ChatContextProvider } from './Components/Chat/ChatContext';
-import { Chat } from './Components/Chat';
+import {About} from './components/About';
+import {Contact} from './components/Contact';
+import{Rules} from './components/Rules';
+import{GameInfo} from './components/Game_info';
+import { SignIn } from './components/SignIn';
+import {OctoberMonth} from './tabla/OctoberMonth';
+import { SeptemberMonth } from './tabla/SeptemberMonth';
+import {Register} from './components/chat/Register';
+import {Login} from './components/chat/Login';
+import { AuthContextProvider } from './components/chat/AuthContext';
+import { ChatContextProvider } from './components/chat/ChatContext';
+import { Chat } from './components/Chat';
 
 
 

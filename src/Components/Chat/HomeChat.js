@@ -1,6 +1,6 @@
 import React from 'react'
-import {Sidebar} from '../Chat/Sidebar';
-import {Chat }from '../Chat/Chat';
+import {Sidebar} from './Sidebar';
+import {Chat }from './Chat'
 
 export const HomeChat = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/nysl.css';
+import '../styles/nysl.css';
 
 
 

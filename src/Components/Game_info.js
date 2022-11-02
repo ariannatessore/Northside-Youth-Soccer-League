@@ -1,8 +1,8 @@
 import React from 'react';
 import {Banner} from './Banner';
-import '../Styles/nysl.css';
+import '../styles/nysl.css';
 import { Navbarr } from './Navbar';
-import Tables from '.././Tabla/Tabla';
+import Tables from '../tabla/Tabla';
 
 
 

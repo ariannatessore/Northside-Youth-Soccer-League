@@ -1,8 +1,8 @@
 import React from 'react';
 import {Banner} from './Banner';
-import '../Styles/nysl.css';
+import '../styles/nysl.css';
 import { Navbarr } from './Navbar';
-import { HomeChat } from './Chat/HomeChat';
+import { HomeChat } from '../components/chat/HomeChat';
 
 export const Chat = () =>{
 
